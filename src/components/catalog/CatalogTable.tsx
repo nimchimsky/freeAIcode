@@ -13,9 +13,9 @@ interface Offer {
   outputPrice: number | null;
   effectivePrice: number | null;
   freeLimitText: string | null;
-  openAiCompatible: boolean;
-  endpointExposesToolCalling: boolean;
-  deprecated: boolean;
+  openAiCompatible: boolean | null;
+  endpointExposesToolCalling: boolean | null;
+  deprecated: boolean | null;
   lastCheckedAt: Date;
 }
 
