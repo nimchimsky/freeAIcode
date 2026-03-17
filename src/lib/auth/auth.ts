@@ -52,7 +52,12 @@ export async function verifySession(token: string): Promise<AdminSession | null>
       typeof payload.iat === 'number' &&
       typeof payload.exp === 'number'
     ) {
-      return payload as AdminSession;
+      return {
+        username: payload.username,
+        isAdmin: payload.isAdmin,
+        iat: payload.iat,
+        exp: payload.exp,
+      };
     }
     
     return null;
