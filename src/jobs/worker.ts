@@ -50,7 +50,7 @@ async function start() {
   });
 
   // Schedule recurring refresh job (every 6 hours)
-  await boss.schedule('refresh-connectors', '0 */6 * * *', null, {
+  await boss.schedule('refresh-connectors', '0 */6 * * *', {}, {
     tz: 'UTC',
   });
 
