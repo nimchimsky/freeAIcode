@@ -67,7 +67,7 @@ export default async function RefreshLogsPage() {
                     <td className="px-6 py-4 text-sm text-gray-900">
                       <div>Created: {log.recordsCreated}</div>
                       <div>Updated: {log.recordsUpdated}</div>
-                      {log.recordsFlagged > 0 && (
+                      {(log.recordsFlagged ?? 0) > 0 && (
                         <div className="text-red-600">Flagged: {log.recordsFlagged}</div>
                       )}
                     </td>
