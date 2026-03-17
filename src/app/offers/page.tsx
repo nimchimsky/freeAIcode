@@ -3,6 +3,8 @@ import { db } from '@/db';
 import { providerOffer, provider, canonicalModel } from '@/db/schema';
 import { eq, desc } from 'drizzle-orm';
 
+export const dynamic = 'force-dynamic';
+
 export default async function OffersPage() {
   const offers = await db
     .select({

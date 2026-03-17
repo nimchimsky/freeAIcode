@@ -3,6 +3,8 @@ import { db } from '@/db';
 import { refreshLog, canonicalModel, providerOffer } from '@/db/schema';
 import { desc, count } from 'drizzle-orm';
 
+export const dynamic = 'force-dynamic';
+
 export default async function AdminDashboard() {
   const [modelCount] = await db.select({ count: count() }).from(canonicalModel);
   const [offerCount] = await db.select({ count: count() }).from(providerOffer);
