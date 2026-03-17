@@ -1,12 +1,12 @@
 # Railway Deployment Credentials
 
 ## 🌐 URL de l'aplicació
-https://freeaicode-production.up.railway.app
+https://freeaicode.up.railway.app
 
 ## 🔐 Credencials Admin
 - **Username**: admin
 - **Password**: FreeAI2024Secure!
-- **Login URL**: https://freeaicode-production.up.railway.app/admin/login
+- **Login URL**: https://freeaicode.up.railway.app/admin/login
 
 ## 📊 Estat actual del projecte
 
